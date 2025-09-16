@@ -4,6 +4,7 @@ CREATE TABLE Users (
     name           VARCHAR(255) NOT NULL,
     email          VARCHAR(255) UNIQUE NOT NULL,
     password_hash  VARCHAR(255) NOT NULL,
+    taluk            text NOT NULL,
     role           ENUM('Producer','Consumer') NOT NULL
 );
 
